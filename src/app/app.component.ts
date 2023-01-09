@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
  
   constructor(private nftservice: NftDataService){}
   ngOnInit(): void {
-      this.getNftData()
+      // this.getNftData()
   }
 
 
