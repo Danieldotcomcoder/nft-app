@@ -3,9 +3,17 @@
   padding: 0;
 }
 
+.main-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../../assets/Vector.png") no-repeat 26% 55%,
+    url("../../assets/Vector-1.png") no-repeat 26% 64%,
+    url("../../assets/Vector-2.png") no-repeat 73% 45%;
+}
+
 .main-frame {
-  box-sizing: border-box;
-  border: 1px solid black;
+  padding: 1%;
   width: 40%;
   margin: auto;
   margin-top: 10%;
@@ -13,17 +21,47 @@
 }
 
 .main-frame h1 {
-  position: absolute;
-  /* width: 652px;
-  height: 120px; */
-  /* left: calc(50% - 652px / 2 - 92.5px);
-  top: calc(50% - 120px / 2 - 49.5px); */
   font-family: "Sora";
   font-style: normal;
   font-weight: 600;
-  font-size: 80px;
-  line-height: 100%;
+  font-size: 100px;
+  line-height: 60%;
   text-align: center;
   letter-spacing: 0.2px;
   color: #060714;
+}
+
+.f-nft {
+  position: absolute;
+  left: calc(50% - 231px / 2);
+  top: calc(52% - 18px / 2 - 166.5px);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #7780a1;
+}
+
+.f-dcs {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  /* On White/Grey 100 */
+
+  color: #7780a1;
 }
