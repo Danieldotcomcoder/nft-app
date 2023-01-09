@@ -18,7 +18,7 @@
   justify-content: space-between;
 }
 
-.middle-nav ul li {
+.middle-nav ul li a {
   font-family: "Sora";
   font-style: normal;
   font-weight: 600;
@@ -29,6 +29,7 @@
   text-align: center;
   letter-spacing: 0.2px;
   color: #7780a1;
+  text-decoration: none;
 }
 
 .end-nav {
