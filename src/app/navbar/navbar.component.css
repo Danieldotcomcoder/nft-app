@@ -1,5 +1,32 @@
 .main-nav {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+}
+
+.middle-nav {
+  position: relative;
+  margin-left: 20%;
+  margin-top: 1%;
+  width: 35%;
+}
+
+.middle-nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.middle-nav ul li {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #7780A1;
 }
