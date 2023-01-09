@@ -1,4 +1,29 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.main-frame {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 40%;
+  margin: auto;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.main-frame h1 {
+  position: absolute;
+  /* width: 652px;
+  height: 120px; */
+  /* left: calc(50% - 652px / 2 - 92.5px);
+  top: calc(50% - 120px / 2 - 49.5px); */
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #060714;
 }
