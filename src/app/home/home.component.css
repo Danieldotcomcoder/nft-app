@@ -14,9 +14,9 @@
 
 .main-frame {
   padding: 1%;
-  width: 40%;
+  width: 60%;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 1%;
   text-align: center;
 }
 
@@ -32,9 +32,7 @@
 }
 
 .f-nft {
-  position: absolute;
-  left: calc(50% - 231px / 2);
-  top: calc(52% - 18px / 2 - 166.5px);
+  margin-top: 8%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -64,7 +62,6 @@
 
 .example {
   width: 40%;
-  margin-top: 1%;
   align-self: center;
   margin-left: 5%;
 }
