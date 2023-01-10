@@ -19,13 +19,13 @@ export class CollectionsComponent implements OnInit {
 
 
   private getNftData() {
-      this.nftservice.getNftData().subscribe({
-        next: (response: any) => {
-          this.CollectionData = response
-          console.log(this.CollectionData);
-          
-        }
-      })
+    this.nftservice.getNftData().subscribe({
+      next: (response: any) => {
+        this.CollectionData = response
+        console.log(this.CollectionData.results);
+
+      }
+    })
   }
 
 

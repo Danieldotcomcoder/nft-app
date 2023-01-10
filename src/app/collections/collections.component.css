@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 3%;
+  text-align: center;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 60%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #060714;
+}
+
+.collections {
+  margin-top: 1%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10%;
+  justify-content: space-around;
+}
+
+.collections li {
+  list-style: none;
+}
+
+.collection-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.collection-image {
+  width: 220px;
+  height: 330px;
+  border: 1px solid lightblue;
+  border-radius: 20px;
+}
+
+.collection-image:hover {
+    border: 1px solid lightcoral;
+}
+
+.collection-describe {
+  display: none;
+  position: absolute;
+}
+
+.image-link:hover + .collection-describe {
+  display: block;
+  color: aqua;
+}
+
+.collection-name {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+
+  /* On White/Dark 100 */
+
+  color: #060714;
+}

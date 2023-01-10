@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NftDataService } from './services/nft-data.service';
+
 
 @Component({
   selector: 'app-root',
