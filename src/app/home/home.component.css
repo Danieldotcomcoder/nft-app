@@ -54,14 +54,69 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 150%;
-  /* identical to box height, or 36px */
 
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.2px;
-
-  /* On White/Grey 100 */
-
   color: #7780a1;
+}
+
+.example {
+  width: 40%;
+  align-self: center;
+}
+
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2a27c9;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+form.example input:focus {
+  outline: 1px solid lightgray;
+}
+
+form.example input::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2px;
+  color: #bbc0d0;
+  opacity: 0.9;
 }
