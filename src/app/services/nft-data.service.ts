@@ -10,7 +10,7 @@ export class NftDataService {
 
   constructor(private http: HttpClient) { }
 
-  getNftData(): Observable<Root>{
+  getCollectionsData(): Observable<Root>{
     const options = {
       method: 'GET',
       headers: { accept: 'application/json', 'X-API-KEY': 'iu87qb1bkTsbBD5bZdFqDYcCRTc8PxVe' }
