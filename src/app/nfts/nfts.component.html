@@ -5,7 +5,7 @@
         <li *ngFor="let item of AllNftsFiltered">
             <div class="collection-item">
                 <div class="image-link">
-                    <a target="_blank"><img class="collection-image" src={{Imageurl(item)}} /> </a>
+                    <a [routerLink]="['/nftItem', item.contract_address, item.id]" routerLinkActive="active" ariaCurrentWhenActive="page"><img class="collection-image" src={{Imageurl(item)}} /> </a>
                 </div>
                 <div class="name-exchange">
                     <h3 class="collection-name">{{item.token_name}}</h3>

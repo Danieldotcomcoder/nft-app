@@ -24,9 +24,10 @@ export class NftDataService {
       method: 'GET',
       headers: {accept: 'application/json', 'X-API-KEY': 'iu87qb1bkTsbBD5bZdFqDYcCRTc8PxVe'}
     };
-    
+    console.log(this.http.get('https://api.blockspan.com/v1/nfts/contract/' +address+ '/token/' +token_id+ '?chain=eth-main', options));
+
     return this.http.get('https://api.blockspan.com/v1/nfts/contract/' +address+ '/token/' +token_id+ '?chain=eth-main', options)
-  
+    
   }
 
 
