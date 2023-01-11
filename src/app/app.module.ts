@@ -7,13 +7,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { CollectionsComponent } from './collections/collections.component';
+import { NftsComponent } from './nfts/nfts.component';
+import { NftItemComponent } from './nft-item/nft-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    CollectionsComponent
+    CollectionsComponent,
+    NftsComponent,
+    NftItemComponent
   ],
   imports: [
     BrowserModule,

@@ -1,16 +1,14 @@
-<h1>Recent NFTs</h1>
+<h1>Recently Minted NFTs</h1>
 
 <div>
     <ul class="collections">
         <li *ngFor="let item of AllNftsFiltered">
             <div class="collection-item">
                 <div class="image-link">
-                    <a target="_blank"><img class="collection-image" src={{fiximageurl(item.metadata.image)}} /> </a>
+                    <a target="_blank"><img class="collection-image" src={{Imageurl(item)}} /> </a>
                 </div>
                 <div class="name-exchange">
                     <h3 class="collection-name">{{item.token_name}}</h3>
-                    <span id="exchange-badge" class="badge text-bg-info">{{item.exchange}}</span>
-
                 </div>
 
             </div>

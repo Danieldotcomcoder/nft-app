@@ -16,6 +16,27 @@ export class NftDataService {
       headers: { accept: 'application/json', 'X-API-KEY': 'iu87qb1bkTsbBD5bZdFqDYcCRTc8PxVe' }
     };
     return this.http.get<Root>('https://api.blockspan.com/v1/exchanges/collections?chain=eth-main&exchange=opensea&page_size=50', options);
+
+  }
+
+  getSingleNftInfo(address: string, token_id: number) {
+    const options = {
+      method: 'GET',
+      headers: {accept: 'application/json', 'X-API-KEY': 'iu87qb1bkTsbBD5bZdFqDYcCRTc8PxVe'}
+    };
     
+    return this.http.get('https://api.blockspan.com/v1/nfts/contract/' +address+ '/token/' +token_id+ '?chain=eth-main', options)
+  
+  }
+
+
+  getAllNftsOfOwner(address: string) {
+    const options = {
+      method: 'GET',
+      headers: {accept: 'application/json', 'X-API-KEY': 'iu87qb1bkTsbBD5bZdFqDYcCRTc8PxVe'}
+    };
+    
+    return this.http.get('https://api.blockspan.com/v1/nfts/owner/' +address +'?chain=eth-main&page_size=25', options)
+
   }
 }

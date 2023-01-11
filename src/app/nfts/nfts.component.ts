@@ -25,15 +25,18 @@ export class NftsComponent implements OnInit {
       next: (response: any) => {
         this.AllNfts = response.results
         this.AllNftsFiltered = this.AllNfts.filter((item: any) => item.metadata != null);
+        console.log(this.AllNftsFiltered);
+        
       }
     })
   }
 
-  public fiximageurl(url: string) {
-    if(url) {
-    return url.replace("ipfs://", "https://ipfs.io/ipfs/")
+  public Imageurl(item: any) {
+    if(item.cached_images != null) {
+      return item.cached_images.original
+
     } else {
-      return 1
+      return item.metadata.image.replace("ipfs://", "https://ipfs.io/ipfs/")
     }
   }
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NftDataService } from '../services/nft-data.service';
-import { Result, Root } from '../models/collection.model';
+import { Root } from '../models/collection.model';
 
 @Component({
   selector: 'app-collections',
@@ -14,16 +14,14 @@ export class CollectionsComponent implements OnInit {
   CollectionData!: Root;
 
   ngOnInit(): void {
-    this.getNftData()
+    this.getCollectionsData()
   }
 
 
-  private getNftData() {
-    this.nftservice.getNftData().subscribe({
+  private getCollectionsData() {
+    this.nftservice.getCollectionsData().subscribe({
       next: (response: any) => {
         this.CollectionData = response
-        console.log(this.CollectionData.results);
-
       }
     })
   }
