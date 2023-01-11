@@ -11,7 +11,7 @@ export class CollectionsComponent implements OnInit {
 
   constructor(private nftservice: NftDataService) { }
 
-  CollectionData!: Root;
+  CollectionData!: any;
 
   ngOnInit(): void {
     this.getCollectionsData()
@@ -21,7 +21,7 @@ export class CollectionsComponent implements OnInit {
   private getCollectionsData() {
     this.nftservice.getCollectionsData().subscribe({
       next: (response: any) => {
-        this.CollectionData = response
+        this.CollectionData = response.results
       }
     })
   }

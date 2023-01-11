@@ -14,10 +14,8 @@ export class NftItemComponent implements OnInit {
   constructor(private nftdataservice: NftDataService, private _Activatedroute: ActivatedRoute) {
     this.address = this._Activatedroute.snapshot.params['address']
     this.token_id = this._Activatedroute.snapshot.params['id']
-    console.log(this.address, this.token_id);
-    
    }
-   NftInfo?: any
+  NftInfo?: any
   ngOnInit(): void {
     this.getSingleNftData(this.address,this.token_id)
   }

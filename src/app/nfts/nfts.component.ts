@@ -1,7 +1,6 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AllNftsService } from '../services/all-nfts.service';
 import { Root } from '../models/collection.model';
-import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-nfts',
@@ -16,6 +15,7 @@ export class NftsComponent implements OnInit {
   AllNftsFiltered!: any
 
   ngOnInit(): void {
+    console.log(this.AllNftsFiltered);
     this.getAllNftsData()
 
   }
@@ -23,8 +23,7 @@ export class NftsComponent implements OnInit {
   private getAllNftsData() {
     this.allnftsservice.getallnfts().subscribe({
       next: (response: any) => {
-        this.AllNfts = response.results
-        this.AllNftsFiltered = this.AllNfts.filter((item: any) => item.metadata != null);
+        this.AllNftsFiltered = response.results.filter((item: any) => item.metadata != null);
         console.log(this.AllNftsFiltered);
         
       }

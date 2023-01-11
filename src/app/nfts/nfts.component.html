@@ -1,7 +1,7 @@
 <h1>Recently Minted NFTs</h1>
 
 <div>
-    <ul class="collections">
+    <ul class="collections" *ngIf="AllNftsFiltered !== undefined">
         <li *ngFor="let item of AllNftsFiltered">
             <div class="collection-item">
                 <div class="image-link">
@@ -15,4 +15,7 @@
 
         </li>
     </ul>
+    <div *ngIf="AllNftsFiltered === undefined">
+        Fetching
+    </div>
 </div>
