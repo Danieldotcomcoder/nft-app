@@ -15,7 +15,6 @@ export class NftsComponent implements OnInit {
   AllNftsFiltered!: any
 
   ngOnInit(): void {
-    console.log(this.AllNftsFiltered);
     this.getAllNftsData()
 
   }
