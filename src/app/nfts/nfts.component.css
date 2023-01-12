@@ -69,3 +69,13 @@
     height: 18px;
   }
   
+  .loading {
+    margin-top: 1%;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #060714;
+  }

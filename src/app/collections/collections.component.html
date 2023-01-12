@@ -1,11 +1,12 @@
 <h1>Recent Collections</h1>
 <br>
-<div>
+<div class="main">
     <ul class="collections" *ngIf="CollectionData">
         <li *ngFor="let item of CollectionData">
             <div class="collection-item">
                 <div class="image-link">
-                    <a href={{item.exchange_url}} target="_blank"><img class="collection-image" src={{item.image_url}}> </a>
+                    <a href={{item.exchange_url}} target="_blank"><img class="collection-image" src={{item.image_url}}>
+                    </a>
                 </div>
                 <div class="name-exchange">
                     <h3 class="collection-name">{{item.name}}</h3>
@@ -17,7 +18,11 @@
 
         </li>
     </ul>
-    <div *ngIf="CollectionData === undefined">
-      Fetching Data ...
+    <div class="loading" *ngIf="CollectionData === undefined">
+        <div class="spinner-border text-primary" role="status">
+
+        </div>
+        <p>Loading Data...</p>
     </div>
+
 </div>

@@ -15,7 +15,10 @@
 
         </li>
     </ul>
-    <div *ngIf="AllNftsFiltered === undefined">
-        Fetching
+    <div class="loading" *ngIf="AllNftsFiltered === undefined">
+        <div class="spinner-border text-primary" role="status">
+
+        </div>
+        <p>Loading Data...</p>
     </div>
 </div>
