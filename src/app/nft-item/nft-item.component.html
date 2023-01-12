@@ -21,7 +21,7 @@
                 <li class="Description">Total Transfers: {{NftInfo.total_transfers}}</li>
                 <li class="Description">Minted at:
                     {{NftInfo.minted_at.slice(11,16)+"&nbsp;&nbsp;&nbsp;"+NftInfo.minted_at.slice(0,10)}}</li>
-                <li class="Description" *ngIf="NftInfo.recent_price !== null">Price: {{NftInfo.recent_price.price_usd}}
+                <li class="Description" *ngIf="NftInfo.recent_price !== null">Price: {{NftInfo.recent_price.price_usd | number: '1.00'}}
                     $</li>
                 <li class="Description" *ngIf="NftInfo.recent_price === null">Price: Not Listed Yet</li>
                 <li class="Description">External Url: &nbsp;&nbsp;<a *ngIf="NftInfo.metadata.external_url"
