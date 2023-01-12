@@ -16,6 +16,7 @@
                 <li class="Description" >Minted at: {{NftInfo.minted_at.slice(11,16)+"&nbsp;&nbsp;&nbsp;"+NftInfo.minted_at.slice(0,10)}}</li>
                 <li class="Description" *ngIf="NftInfo.recent_price !== null" >Price: {{NftInfo.recent_price.price_usd}} $</li>
                 <li class="Description" *ngIf="NftInfo.recent_price === null" >Price: Not Listed Yet</li>
+                <li class="Description" id="address" > <a (click)="copy(NftInfo.contract_address)">Owner Address(Click to Copy): {{NftInfo.contract_address}} </a></li>
             </ul>
         </div>
         

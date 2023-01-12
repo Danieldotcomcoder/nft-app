@@ -52,10 +52,15 @@
 
 
 .Description {
+  box-sizing: border-box;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 14px;
   letter-spacing: 0.2px;
   color: #7780a1;
 } 
+
+#address {
+  cursor: pointer;
+}

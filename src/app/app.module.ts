@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { CollectionsComponent } from './collections/collections.component';
 import { NftsComponent } from './nfts/nfts.component';
 import { NftItemComponent } from './nft-item/nft-item.component';
+import { ClipboardModule } from 'ngx-clipboard';
+
 
 @NgModule({
   declarations: [
@@ -17,12 +19,13 @@ import { NftItemComponent } from './nft-item/nft-item.component';
     HomeComponent,
     CollectionsComponent,
     NftsComponent,
-    NftItemComponent
+    NftItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
