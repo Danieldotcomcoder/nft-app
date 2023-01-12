@@ -1,14 +1,21 @@
 <div>
     <div class="nft-item" *ngIf="NftInfo">
-        <div class="nft-image">
+        <div class="nft-image" *ngIf="NftInfo.cached_images !== null">
             <img src={{NftInfo.cached_images.original}} alt="" >
+        </div>
+        <div class="nft-image" *ngIf="NftInfo.cached_images === null">
+            <img  alt="Image Not Loading"/> 
         </div>
         <div class="nft-info">
             <ul class="nft-info-list">
-                <li>1</li>
-                <li>doajuhd</li>
-                <li>dohado[</li>
-                <li>dlaidhaod</li>
+                <li><h3>{{NftInfo.token_name}}</h3></li>
+                <li *ngIf="NftInfo.token_description === '' " class="Description"><p>No Description For this Nft</p></li>
+                <li *ngIf="NftInfo.token_description !== '' " class="Description"><p>Description: <br> {{NftInfo.token_description}}</p></li>
+                <li class="Description" >Total Owners: {{NftInfo.total_current_owners}}</li>
+                <li class="Description" >Total Transfers: {{NftInfo.total_transfers}}</li>
+                <li class="Description" >Minted at: {{NftInfo.minted_at.slice(11,16)+"&nbsp;&nbsp;&nbsp;"+NftInfo.minted_at.slice(0,10)}}</li>
+                <li class="Description" *ngIf="NftInfo.recent_price !== null" >Price: {{NftInfo.recent_price.price_usd}} $</li>
+                <li class="Description" *ngIf="NftInfo.recent_price === null" >Price: Not Listed Yet</li>
             </ul>
         </div>
         
