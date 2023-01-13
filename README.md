@@ -1,5 +1,5 @@
 # Nft App
- A Nft web application that lets you browse recent Nft collections and singles , and show you required information about each single Nft.
+ A Nft web application that lets you browse recent Nft collections and singles, and show you required information about each single Nft.
 
 ## Built With
 - Angular
@@ -9,7 +9,7 @@
 - Visual Studio Code
 ## Live Demo
 
-[Link]()
+[Link](https://magnificent-taiyaki-1f5a78.netlify.app/)
 
 ## Authors
 
