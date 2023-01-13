@@ -4,7 +4,7 @@
             <img src={{NftInfo.cached_images.original}} alt="">
         </div>
         <div class="nft-image" *ngIf="NftInfo.cached_images === null">
-            <img alt="Image Not Loading" />
+            <img src="{{NftInfo.metadata.image}}" />
         </div>
         <div class="nft-info">
             <ul class="nft-info-list">

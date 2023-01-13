@@ -26,7 +26,7 @@ export class NftItemComponent implements OnInit {
   private getSingleNftData(address: any, token_id: any) {
     this.nftdataservice.getSingleNftInfo(address, token_id).subscribe({
       next: (response: any) => {
-        this.NftInfo = response
+        this.NftInfo = response        
       }
     })
   }

@@ -31,7 +31,7 @@ export class NftsComponent implements OnInit {
       return item.cached_images.original
 
     } else {
-      return item.metadata.image.replace("ipfs://", "https://ipfs.io/ipfs/")
+      return item.metadata.image
     }
   }
 
