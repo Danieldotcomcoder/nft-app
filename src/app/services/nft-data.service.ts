@@ -15,7 +15,7 @@ export class NftDataService {
       method: 'GET',
       headers: { accept: 'application/json', 'X-API-KEY': 'iu87qb1bkTsbBD5bZdFqDYcCRTc8PxVe' }
     };
-    return this.http.get<Root>('https://api.blockspan.com/v1/exchanges/collections?chain=eth-main&exchange=opensea&page_size=50', options);
+    return this.http.get<Root>('https://api.blockspan.com/v1/exchanges/collections?chain=arbitrum-main&exchange=opensea&page_size=50', options);
 
   }
 
@@ -30,13 +30,13 @@ export class NftDataService {
   }
 
 
-  getAllNftsOfOwner(address: string) {
+  getAllNftsOfCollection(address: string) {
     const options = {
       method: 'GET',
       headers: {accept: 'application/json', 'X-API-KEY': 'iu87qb1bkTsbBD5bZdFqDYcCRTc8PxVe'}
     };
     
-    return this.http.get('https://api.blockspan.com/v1/nfts/owner/' +address +'?chain=eth-main&page_size=25', options)
+    return this.http.get('https://api.blockspan.com/v1/nfts/contract/' +address +'?chain=arbitrum-main&page_size=25', options)
 
   }
 }

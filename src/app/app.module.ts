@@ -10,6 +10,7 @@ import { CollectionsComponent } from './collections/collections.component';
 import { NftsComponent } from './nfts/nfts.component';
 import { NftItemComponent } from './nft-item/nft-item.component';
 import { ClipboardModule } from 'ngx-clipboard';
+import { NftsincollectionComponent } from './nftsincollection/nftsincollection.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { ClipboardModule } from 'ngx-clipboard';
     CollectionsComponent,
     NftsComponent,
     NftItemComponent,
+    NftsincollectionComponent,
   ],
   imports: [
     BrowserModule,
