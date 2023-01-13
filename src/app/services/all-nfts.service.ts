@@ -16,7 +16,7 @@ export class AllNftsService {
       headers: {accept: 'application/json', 'X-API-KEY': 'iu87qb1bkTsbBD5bZdFqDYcCRTc8PxVe'}
     };
     
-    return this.http.get<Root>('https://api.blockspan.com/v1/nfts?chain=eth-main&page_size=75', options)
+    return this.http.get<Root>('https://api.blockspan.com/v1/nfts?chain=arbitrum-main&page_size=100', options)
   
   }
 }
