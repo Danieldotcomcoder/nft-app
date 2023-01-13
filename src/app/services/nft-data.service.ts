@@ -15,7 +15,7 @@ export class NftDataService {
       method: 'GET',
       headers: { accept: 'application/json', 'X-API-KEY': 'iu87qb1bkTsbBD5bZdFqDYcCRTc8PxVe' }
     };
-    return this.http.get<Root>('https://api.blockspan.com/v1/exchanges/collections?chain=arbitrum-main&exchange=opensea&page_size=50', options);
+    return this.http.get<Root>('https://api.blockspan.com/v1/exchanges/collections?chain=eth-main&exchange=opensea&page_size=50', options);
 
   }
 
