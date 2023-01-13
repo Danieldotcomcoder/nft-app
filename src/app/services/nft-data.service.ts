@@ -36,7 +36,7 @@ export class NftDataService {
       headers: {accept: 'application/json', 'X-API-KEY': 'iu87qb1bkTsbBD5bZdFqDYcCRTc8PxVe'}
     };
     
-    return this.http.get('https://api.blockspan.com/v1/nfts/contract/' +address +'?chain=arbitrum-main&page_size=25', options)
+    return this.http.get('https://api.blockspan.com/v1/nfts/contract/' +address +'?chain=eth-main&page_size=25', options)
 
   }
 }

@@ -5,7 +5,7 @@
         <li *ngFor="let item of CollectionData">
             <div class="collection-item">
                 <div class="image-link">
-                    <a href={{item.exchange_url}} target="_blank"><img class="collection-image" src={{item.image_url}}>
+                    <a [routerLink]="['/nftsincollection', item.contracts[0].contract_address]" ><img class="collection-image" src={{item.image_url}}>
                     </a>
                 </div>
                 <div class="name-exchange">
