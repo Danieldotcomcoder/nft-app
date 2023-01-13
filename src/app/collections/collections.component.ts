@@ -22,11 +22,7 @@ export class CollectionsComponent implements OnInit {
     this.nftservice.getCollectionsData().subscribe({
       next: (response: any) => {
         this.CollectionData = response.results
-      
-        
       }
     })
   }
-
-
 }
