@@ -21,7 +21,11 @@ export class NftsComponent implements OnInit {
   private getAllNftsData() {
     this.allnftsservice.getallnfts().subscribe({
       next: (response: any) => {
+        console.log(response);
+        
         this.AllNftsFiltered = response.results.filter((item: any) => item.metadata != null);
+      console.log(this.AllNftsFiltered);
+      
       }
     })
   }
