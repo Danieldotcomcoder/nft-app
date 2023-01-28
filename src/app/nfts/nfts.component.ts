@@ -21,17 +21,14 @@ export class NftsComponent implements OnInit {
   private getAllNftsData() {
     this.allnftsservice.getallnfts().subscribe({
       next: (response: any) => {
-        console.log(response);
-        
+
         this.AllNftsFiltered = response.results.filter((item: any) => item.metadata != null);
-      console.log(this.AllNftsFiltered);
-      
       }
     })
   }
 
   public Imageurl(item: any) {
-    if(item.cached_images != null) {
+    if (item.cached_images != null) {
       return item.cached_images.original
 
     } else {

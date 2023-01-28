@@ -127,3 +127,47 @@ form.example input::placeholder {
   margin-top: 5%;
   width: 40%;
 }
+
+@media screen and (max-width: 992px) {
+  .main-home {
+    width: 100%;
+  }
+
+  .main-home {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-size: 5%;
+  }
+
+  .main-frame {
+    width: 95%;
+  }
+
+  .main-frame h1 {
+    font-size: 50px;
+    line-height: 5px;
+  }
+
+  .f-nft {
+    margin-bottom: 3.5%;
+  }
+
+  .f-dcs{
+    margin-top: 3.5%;
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30%;
+    width: 90%;
+  }
+
+  .logos img {
+    width: 20%;
+  }
+}
