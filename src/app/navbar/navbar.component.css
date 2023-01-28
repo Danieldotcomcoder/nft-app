@@ -5,6 +5,10 @@
   justify-content: space-between;
 }
 
+.navbar {
+  display: none;
+}
+
 .middle-nav {
   position: relative;
   margin-top: 1%;
@@ -79,4 +83,25 @@
   inset 4px 4px 4px rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   color: #ffffff;
+}
+
+
+@media screen and (max-width: 992px) { 
+  .end-nav button {
+    display: none;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    width: 100%;
+  }
+
+  .offcanvas {
+    background: transparent;
+  }
+
 }
