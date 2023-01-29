@@ -134,12 +134,11 @@ form.example input::placeholder {
   }
 
   .main-home {
-    margin-top: 35%;
+    margin-top: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    background-size: 5%;
+    background-size: 0%;
   }
 
   .main-frame {
@@ -152,11 +151,11 @@ form.example input::placeholder {
   }
 
   .f-nft {
-    margin-bottom: 3.5%;
+    margin-bottom: 5%;
   }
 
   .f-dcs{
-    margin-top: 3.5%;
+    margin-top: 5%;
   }
 
   .logos {
