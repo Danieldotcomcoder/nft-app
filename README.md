@@ -13,7 +13,7 @@
 
 ## Authors
 
- Daniel Shdeed
+ Daniel Shdeed:
 
 - [GitHub](https://github.com/Danieldotcomcoder)
 - [Twitter](https://twitter.com/DannyDotcoder)
