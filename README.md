@@ -1,5 +1,5 @@
-# Nft App
- A Nft web application that lets you browse recent Nft collections and singles , and show you useful information about each single Nft.
+# NFT App
+ An NFT web application that lets you browse recent NFT collections and singles , and show you useful information about each single NFT.
 
 ## Built With
 - Angular
